@@ -12,7 +12,7 @@ for i in range(len(lines)):
     line = lines[i]
     if re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/\d{1,2}$', line):
         # Insert IP-CIDR and ,no-resolve
-        lines[i] = 'IP-CIDR ' + line + ',no-resolve'
+        lines[i] = 'IP-CIDR ' + line
     else:
         # Output the line as is
         lines[i] = line
